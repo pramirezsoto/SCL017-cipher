@@ -1,0 +1,107 @@
+body 
+{
+    background-color: 	#FFE4E1
+}
+.primero {
+    font-family: cursive;
+    text-align: center;
+    color:sandybrown;
+    margin-top:50px;
+  }
+
+
+.n {
+    font-family:  cursive;
+    text-align: center;
+    color: #D2691E;
+  }
+
+  .caja{
+    display: block;
+    resize: none;
+    border: 3px  black;
+    background-color: salmon;
+    height: 0rem;
+    width: 2rem;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    
+    
+  }
+
+  .cajota{
+    display: block;
+    resize: none;
+    border: 3px  black;
+    background-color: salmon;
+    height: 5rem;
+    width: 50%;
+    border-radius: 15px;
+    padding: 1rem;
+    margin-bottom: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+.cd {
+    font-family:  cursive;
+    text-align: center;
+    color: #D2691E;
+  }
+
+  .aqui {
+    font-family:  cursive;
+    text-align: center;
+    color: #D2691E;
+  }
+
+
+    
+
+
+.btn {
+   
+    display: inline-block;
+    width: 10%;
+    border-radius: 10px;
+    background-color: 	#D8BFD8;
+    font-family: "K2D", sans-serif;
+    color: white;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+
+.btno {
+   
+    display: inline-block;
+    width: 10%;
+    border-radius: 10px;
+    background-color: 	#D8BFD8;
+    font-family: "K2D", sans-serif;
+    color: white;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+ 
+}
+.cajita {
+    display: block;
+    resize: none;
+    border: 3px  black;
+    background-color: salmon;
+    height: 5rem;
+    width: 50%;
+    border-radius: 15px;
+    padding: 1rem;
+    margin-bottom: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
