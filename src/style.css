@@ -31,12 +31,12 @@ body
     margin-top: 50px;
     
     
+    
   }
 
   .cajota{
     display: block;
     resize: none;
-    border: 3px  black;
     background-color: salmon;
     height: 5rem;
     width: 50%;
@@ -45,6 +45,8 @@ body
     margin-bottom: 5rem;
     margin-left: auto;
     margin-right: auto;
+    text-transform: uppercase;
+    
   }
   
 .cd {
@@ -94,7 +96,6 @@ body
 .cajita {
     display: block;
     resize: none;
-    border: 3px  black;
     background-color: salmon;
     height: 5rem;
     width: 50%;
@@ -104,4 +105,5 @@ body
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
+    
 }
