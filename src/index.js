@@ -1,80 +1,35 @@
 import cipher from './cipher.js';
 
 var boton1 = document.getElementById("cifrar");
-var boton2 = document.getElementById("descrifrar");
+var boton2 = document.getElementById("descifrar");
 
-cifrar.addEventListener("click", enviarTexto);
-descifrar.addEventListener("click", enviarOtroTexto);
+boton1.addEventListener("click", elcifrado);
+boton2.addEventListener("click", eldescifrado);
 
-function enviarTexto() {
-    var abc = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+function elcifrado() {
+    // Se obtiene el valor de la caja de texto que tiene el desplazamiento
     var fijo = parseInt(document.getElementById("desplazamientos").value, 10);
-    var abcLongitud = abc.length;
+
+    // Trae el valor de la caja de texto que tiene el mensaje a descrifar
     var palabra = document.getElementById("mensaje").value;
-    palabra = palabra.toUpperCase();
-    var largoPalabra = palabra.length;
-    var palabraCifrada = "";
 
-    for (var i = 0; i < largoPalabra; i++) {
-        var letraPalabra = palabra.charAt(i);
-        // nos trae el caracter del indice que es cero y la palabra indicada
-        var posicionEnAbc = abc.indexOf(letraPalabra);
-        // llama a abc y devuelve al indice con la palabra escrita
-        if (posicionEnAbc != -1) {
-            // si posicion en abc es -1 no lo tomara en cuenta
-            var cantidadAvance = (posicionEnAbc + fijo) % abcLongitud;
-            // nos trae el abc y suma el numero con el que se desplazaran las letras mas el residuo de abcLongitud
-            palabraCifrada = palabraCifrada + abc.charAt(cantidadAvance);
-            // nos da la palabra cifrada 
-        }
-        else {
-            palabraCifrada = palabraCifrada + letraPalabra;
-        }
-    }
-    // muestra en la consola la palabra cifrada
-    console.log(palabraCifrada);
-
-    document.getElementById("otromensaje").value= palabraCifrada;
+    // Mandas a cifrar la palabra seg'un el valor fijo
+    var palabraCifrada =  cipher.encode(fijo, palabra);
+   
+    // Se pone la palabra cifrada en la caja de texto
+    document.getElementById("otromensaje").value = palabraCifrada;
 }
 
+function eldescifrado() {
+    // Se obtiene el valor de la caja de texto que tiene el desplazamiento
+    var fijo = parseInt(document.getElementById("desplazamientos").value, 10);
 
-function enviarOtroTexto() {
-    var abc ="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    var fijo = -1 * parseInt(document.getElementById("desplazamientos").value, 10);
-    var abcLongitud = abc.length;
+    // Trae el valor de la caja de texto que tiene el mensaje a descrifar
     var palabra = document.getElementById("mensaje").value;
-    var largoPalabra = palabra.length;
-    var palabraCifrada = "";
 
-    for (var i = 0; i < largoPalabra; i++) {
-        var letraPalabra = palabra.charAt(i);
-
-        var posicionEnAbc = abc.indexOf(letraPalabra);
-
-
-        if (posicionEnAbc != -1) {
-
-            var cantidadAvance = (posicionEnAbc + fijo) % abcLongitud;
-
-            palabraCifrada = palabraCifrada + abc.charAt(cantidadAvance);
-        }
-        else {
-            palabraCifrada = palabraCifrada + letraPalabra;
-            // 
-        }
-    }
-    console.log(palabraCifrada);
-
-    document.getElementById("otromensaje").value= palabraCifrada;
-
+    // Mandas a cifrar la palabra seg'un el valor fijo
+    var palabraDescifrada =  cipher.decode(fijo, palabra);
+    
+    // Se pone la palabra cifrada en la caja de texto
+    document.getElementById("otromensaje").value = palabraDescifrada;
 }
-
-
-
-
-
-
-
-
-
-
