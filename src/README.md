@@ -5,7 +5,7 @@
 * 1. Introduccion.
 * 2. Proceso.
 * 3. UX.
-* 4. Objetivos del proyecto.
+
 
 ***
 
@@ -21,6 +21,12 @@
 
 * Primero se busco sobre que y para quien iba a ir dirigido el cifrado Cesar, el cual se decidio la violencia que se a producido debido a la pandemia en las familias.
 * Luego se hizo el prototipo de baja fidelidad, dibujado a mano en un cuaderno, imaginando como queria que se viera la app .
+
+![Drag Racing](https://i.ibb.co/bjV99yY/Whats-App-Image-2021-05-30-at-23-21-06.jpg )
+
+![Drag Racing](https://i.ibb.co/Bc9hVrs/Whats-App-Image-2021-05-30-at-23-21-06-1.jpg )
+
+
 * Se utilizo trello como medio de organizacion, para ir separando en pequeñas partes el proyecto. 
 
 * Se trabajo con  HTML, JavaScript y css de acuerdo a lo definido previamente.
